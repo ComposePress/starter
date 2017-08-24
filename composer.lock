@@ -1,0 +1,100 @@
+{
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "6c63ea2c659a95c1229f71cf5aba14da",
+  "packages": [
+    {
+      "name": "level-2/dice",
+      "version": "dev-v2.0-PHP5.4-5.5",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Level-2/Dice.git",
+        "reference": "33e5401c4a577b7d8dc7dc04db295fe5084343c4"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Level-2/Dice/zipball/33e5401c4a577b7d8dc7dc04db295fe5084343c4",
+        "reference": "33e5401c4a577b7d8dc7dc04db295fe5084343c4",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.4.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Dice\\": "./"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-2-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Tom Butler",
+          "email": "tom@r.je"
+        }
+      ],
+      "description": "A minimalist Dependency injection container (DIC) for PHP. Please note: This branch is only compatible with PHP5.6. 5.5, 5.4 and 5.3 compatible version is available as a separate branch on github. ",
+      "homepage": "http://r.je/dice.html",
+      "keywords": [
+        "dependency injection",
+        "dependency injection container",
+        "di",
+        "ioc"
+      ],
+      "time": "2015-11-30T17:19:11+00:00"
+    },
+    {
+      "name": "pcfreak30/composepress",
+      "version": "0.2.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/pcfreak30/composepress.git",
+        "reference": "6c3af13caa6498089be3884c0698735ca5a04e59"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/pcfreak30/composepress/zipball/6c3af13caa6498089be3884c0698735ca5a04e59",
+        "reference": "6c3af13caa6498089be3884c0698735ca5a04e59",
+        "shasum": ""
+      },
+      "require-dev": {
+        "10up/wp_mock": "dev-dev",
+        "mockery/mockery": "^0.9.9"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "pcfreak30\\ComposePress\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "LGPL3"
+      ],
+      "authors": [
+        {
+          "name": "Derrick Hammer",
+          "email": "derrick@derrickhammer.com"
+        }
+      ],
+      "description": "A simple PSR-4 and composer ready plugin framework for the modern wordpress age",
+      "time": "2017-08-24T09:56:48+00:00"
+    }
+  ],
+  "packages-dev": [],
+  "aliases": [],
+  "minimum-stability": "stable",
+  "stability-flags": {
+    "level-2/dice": 20
+  },
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "platform": [],
+  "platform-dev": []
+}
