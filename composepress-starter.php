@@ -18,7 +18,6 @@ use Dice\Dice;
  *
  * @SuppressWarnings(PHPMD.StaticAccess)
  * @return \ComposePress\Starter\Plugin
- * @alias WPCCSS()
  */
 function composepress_starter() {
 	return composepress_starter_container()->create( '\ComposePress\Starter\Plugin' );
