@@ -51,16 +51,16 @@
     },
     {
       "name": "pcfreak30/composepress",
-      "version": "0.2.0",
+      "version": "0.2.4",
       "source": {
         "type": "git",
         "url": "https://github.com/pcfreak30/composepress.git",
-        "reference": "6c3af13caa6498089be3884c0698735ca5a04e59"
+        "reference": "7150aac5e758503d7dfb5bb94235e2bc7a8a47cc"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/pcfreak30/composepress/zipball/6c3af13caa6498089be3884c0698735ca5a04e59",
-        "reference": "6c3af13caa6498089be3884c0698735ca5a04e59",
+        "url": "https://api.github.com/repos/pcfreak30/composepress/zipball/7150aac5e758503d7dfb5bb94235e2bc7a8a47cc",
+        "reference": "7150aac5e758503d7dfb5bb94235e2bc7a8a47cc",
         "shasum": ""
       },
       "require-dev": {
@@ -84,7 +84,7 @@
         }
       ],
       "description": "A simple PSR-4 and composer ready plugin framework for the modern wordpress age",
-      "time": "2017-08-24T09:56:48+00:00"
+      "time": "2017-08-27T00:03:07+00:00"
     }
   ],
   "packages-dev": [],
