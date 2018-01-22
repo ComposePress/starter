@@ -4,7 +4,6 @@ namespace ComposePress\Starter;
 
 use ComposePress\Core\Abstracts\Plugin as PluginBase;
 use ComposePress\Settings;
-use ComposePress\Settings\Abstracts\UI;
 use ComposePress\Starter\Managers\Example;
 
 /**
@@ -35,17 +34,17 @@ class Plugin extends PluginBase {
 	 */
 	private $settings;
 	/**
-	 * @var \ComposePress\Settings\Abstracts\UI
+	 * @var \ComposePress\Starter\UI
 	 */
 	private $admin_ui;
 
 	/**
 	 * Plugin constructor.
 	 *
-	 * @param ExampleComponent                    $example_component
-	 * @param Example                             $example_manager
-	 * @param \ComposePress\Settings              $settings
-	 * @param \ComposePress\Settings\Abstracts\UI $admin_ui
+	 * @param ExampleComponent         $example_component
+	 * @param Example                  $example_manager
+	 * @param \ComposePress\Settings   $settings
+	 * @param \ComposePress\Starter\UI $admin_ui
 	 */
 	public function __construct( ExampleComponent $example_component, Example $example_manager, Settings $settings, UI $admin_ui ) {
 		$this->example_component = $example_component;
@@ -91,7 +90,7 @@ class Plugin extends PluginBase {
 	}
 
 	/**
-	 * @return \ComposePress\Settings\Abstracts\UI
+	 * @return \ComposePress\Starter\UI
 	 */
 	public function get_admin_ui() {
 		return $this->admin_ui;
