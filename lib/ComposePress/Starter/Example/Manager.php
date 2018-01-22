@@ -4,7 +4,7 @@
 namespace ComposePress\Starter\Example;
 
 
-use pcfreak30\ComposePress\ManagerAbstract;
+use ComposePress\Core\Abstracts\Manager as ManagerBase;
 
 /**
  * Class Manager
@@ -12,7 +12,7 @@ use pcfreak30\ComposePress\ManagerAbstract;
  * @package ComposePress\Starter\Example
  * @property \ComposePress\Starter\Plugin $plugin
  */
-class Manager extends ManagerAbstract {
+class Manager extends ManagerBase {
 	/**
 	 * @var array
 	 */

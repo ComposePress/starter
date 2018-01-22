@@ -4,14 +4,14 @@
 namespace ComposePress\Starter\Example;
 
 
-use pcfreak30\ComposePress\ComponentAbstract;
+use ComposePress\Core\Abstracts\Component;
 
 /**
  * Class ExampleModule
  *
  * @package ComposePress\Starter\Example
  */
-class ExampleModule extends ComponentAbstract {
+class ExampleModule extends Component {
 
 	/**
 	 *

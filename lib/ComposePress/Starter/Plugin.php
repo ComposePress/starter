@@ -2,15 +2,15 @@
 
 namespace ComposePress\Starter;
 
+use ComposePress\Core\Abstracts\Plugin as PluginBase;
 use ComposePress\Starter\Example\Manager;
-use pcfreak30\ComposePress\PluginAbstract;
 
 /**
  * Class Plugin
  *
  * @package ComposePress\Starter
  */
-class Plugin extends PluginAbstract {
+class Plugin extends PluginBase {
 	/**
 	 *
 	 */

@@ -4,7 +4,7 @@
 namespace ComposePress\Starter;
 
 
-use pcfreak30\ComposePress\ComponentAbstract;
+use ComposePress\Core\Abstracts\Component;
 
 /**
  * Class ExampleComponent
@@ -12,7 +12,7 @@ use pcfreak30\ComposePress\ComponentAbstract;
  * @package ComposePress\Starter
  * @property \ComposePress\Starter\Plugin $plugin
  */
-class ExampleComponent extends ComponentAbstract {
+class ExampleComponent extends Component {
 
 	/**
 	 *
