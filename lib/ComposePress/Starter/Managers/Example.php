@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ComposePress\Starter\Example;
+namespace ComposePress\Starter\Managers;
 
 
 use ComposePress\Core\Abstracts\Manager as ManagerBase;
@@ -12,7 +12,8 @@ use ComposePress\Core\Abstracts\Manager as ManagerBase;
  * @package ComposePress\Starter\Example
  * @property \ComposePress\Starter\Plugin $plugin
  */
-class Manager extends ManagerBase {
+class Example extends ManagerBase {
+	const MODULE_NAMESPACE = '\ComposePress\Starter\Example';
 	/**
 	 * @var array
 	 */
