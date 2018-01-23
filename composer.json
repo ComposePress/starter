@@ -1,5 +1,6 @@
 {
   "name": "composepress/starter",
+  "type": "project",
   "authors": [
     {
       "name": "Derrick Hammer",
