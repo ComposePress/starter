@@ -4,8 +4,79 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
     "This file is @generated automatically"
   ],
-  "content-hash": "6c63ea2c659a95c1229f71cf5aba14da",
+  "content-hash": "9ad8f6d01c1195fecbfb287024f3bd97",
   "packages": [
+    {
+      "name": "composepress/core",
+      "version": "0.3.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ComposePress/core.git",
+        "reference": "c305df98a63aa2f68eebcf46a1043ffb8dc75eb3"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/ComposePress/core/zipball/c305df98a63aa2f68eebcf46a1043ffb8dc75eb3",
+        "reference": "c305df98a63aa2f68eebcf46a1043ffb8dc75eb3",
+        "shasum": ""
+      },
+      "require": {
+        "level-2/dice": "dev-v2.0-PHP5.4-5.5"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "ComposePress\\Core\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "Derrick Hammer",
+          "email": "derrick@derrickhammer.com"
+        }
+      ],
+      "description": "A simple PSR-4 and composer ready plugin framework for the modern wordpress age",
+      "time": "2018-01-23T11:30:05+00:00"
+    },
+    {
+      "name": "composepress/settings",
+      "version": "0.1.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ComposePress/settings.git",
+        "reference": "110f28e8320ba3e8ba936c9bd296ba3073e4e529"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/ComposePress/settings/zipball/110f28e8320ba3e8ba936c9bd296ba3073e4e529",
+        "reference": "110f28e8320ba3e8ba936c9bd296ba3073e4e529",
+        "shasum": ""
+      },
+      "require": {
+        "composepress/core": "^0.3.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "ComposePress\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "Derrick Hammer",
+          "email": "derrick@derrickhammer.com"
+        }
+      ],
+      "time": "2018-01-23T11:35:57+00:00"
+    },
     {
       "name": "level-2/dice",
       "version": "dev-v2.0-PHP5.4-5.5",
@@ -48,44 +119,7 @@
         "ioc"
       ],
       "time": "2015-11-30T17:19:11+00:00"
-    },
-    {
-      "name": "pcfreak30/composepress",
-      "version": "0.2.4",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/pcfreak30/composepress.git",
-        "reference": "7150aac5e758503d7dfb5bb94235e2bc7a8a47cc"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/pcfreak30/composepress/zipball/7150aac5e758503d7dfb5bb94235e2bc7a8a47cc",
-        "reference": "7150aac5e758503d7dfb5bb94235e2bc7a8a47cc",
-        "shasum": ""
-      },
-      "require-dev": {
-        "10up/wp_mock": "dev-dev",
-        "mockery/mockery": "^0.9.9"
-      },
-      "type": "library",
-      "autoload": {
-        "psr-4": {
-          "pcfreak30\\ComposePress\\": "src/"
         }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "LGPL3"
-      ],
-      "authors": [
-        {
-          "name": "Derrick Hammer",
-          "email": "derrick@derrickhammer.com"
-        }
-      ],
-      "description": "A simple PSR-4 and composer ready plugin framework for the modern wordpress age",
-      "time": "2017-08-27T00:03:07+00:00"
-    }
   ],
   "packages-dev": [],
   "aliases": [],

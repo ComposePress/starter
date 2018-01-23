@@ -1,5 +1,5 @@
 {
-  "name": "pcfreak30/composepress-starter",
+  "name": "composepress/starter",
   "authors": [
     {
       "name": "Derrick Hammer",
@@ -7,8 +7,8 @@
     }
   ],
   "require": {
-    "composepress/core": "*",
-    "composepress/settings": "*",
+    "composepress/core": "^0.3.0",
+    "composepress/settings": "^0.1.0",
     "level-2/dice": "dev-v2.0-PHP5.4-5.5"
   },
   "autoload": {
