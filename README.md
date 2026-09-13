@@ -38,8 +38,8 @@ composepress-starter.php   Plugin header, autoload guard, and boot call
 src/
   StarterPlugin.php        Composition root: builds and boots the core Plugin
   ExampleSubscriber.php    A HookSubscriber demonstrating hook registration
-  StarterActivator.php     Activation behaviour
-  StarterDeactivator.php   Deactivation behaviour
+  StarterActivator.php     Activation behaviour, single-site and network-wide
+  StarterDeactivator.php   Deactivation behaviour, single-site and network-wide
   Uninstall.php            Static uninstall behaviour
 tests/                     PHPUnit tests; boundaries use core Testing doubles
 phpunit.xml.dist           PHPUnit configuration

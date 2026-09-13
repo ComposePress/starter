@@ -56,6 +56,25 @@ function delete_option(string $option): bool
     return true;
 }
 
+$GLOBALS['composepress_starter_network_options'] = [];
+
+function get_network_option(int|null $networkId, string $option, mixed $default = false): mixed
+{
+    return $GLOBALS['composepress_starter_network_options'][$option] ?? $default;
+}
+
+function update_network_option(int|null $networkId, string $option, mixed $value): bool
+{
+    $GLOBALS['composepress_starter_network_options'][$option] = $value;
+    return true;
+}
+
+function delete_network_option(int|null $networkId, string $option): bool
+{
+    unset($GLOBALS['composepress_starter_network_options'][$option]);
+    return true;
+}
+
 function esc_html(string $text): string
 {
     return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');

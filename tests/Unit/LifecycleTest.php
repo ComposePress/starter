@@ -13,6 +13,7 @@ final class LifecycleTest extends TestCase
     protected function setUp(): void
     {
         $GLOBALS['composepress_starter_options'] = [];
+        $GLOBALS['composepress_starter_network_options'] = [];
     }
 
     public function testActivateStoresVersionOption(): void
@@ -22,12 +23,12 @@ final class LifecycleTest extends TestCase
         self::assertSame('0.2.0', get_option('composepress_starter_version'));
     }
 
-    public function testActivateIsNetworkWideAware(): void
+    public function testNetworkActivateStoresNetworkOption(): void
     {
-        $activator = new StarterActivator('0.2.0');
-        $activator->activate(true);
+        (new StarterActivator('0.2.0'))->activate(true);
 
-        self::assertSame('0.2.0', get_option('composepress_starter_version'));
+        self::assertSame('0.2.0', get_network_option(null, 'composepress_starter_version'));
+        self::assertFalse(get_option('composepress_starter_version'));
     }
 
     public function testDeactivateRemovesVersionOption(): void
@@ -37,5 +38,15 @@ final class LifecycleTest extends TestCase
         (new StarterDeactivator())->deactivate(false);
 
         self::assertFalse(get_option('composepress_starter_version'));
+    }
+
+    public function testNetworkDeactivateRemovesNetworkOption(): void
+    {
+        $GLOBALS['composepress_starter_network_options']['composepress_starter_version'] =
+            '0.2.0';
+
+        (new StarterDeactivator())->deactivate(true);
+
+        self::assertFalse(get_network_option(null, 'composepress_starter_version'));
     }
 }
