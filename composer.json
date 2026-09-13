@@ -1,20 +1,56 @@
 {
-  "name": "composepress/starter",
-  "type": "project",
-  "authors": [
-    {
-      "name": "Derrick Hammer",
-      "email": "derrick@derrickhammer.com"
+    "name": "composepress/starter",
+    "type": "project",
+    "description": "A clean-slate starter plugin for building WordPress plugins on ComposePress",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Derrick Hammer",
+            "email": "derrick@derrickhammer.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "composepress/core": "dev-master"
+    },
+    "require-dev": {
+        "php-stubs/wordpress-stubs": "^6.4",
+        "phpstan/phpstan": "^2.2",
+        "phpunit/phpunit": "^11.5",
+        "roots/wordpress-no-content": "^7.1",
+        "squizlabs/php_codesniffer": "^3.13",
+        "yoast/phpunit-polyfills": "^4.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "roots/wordpress-core-installer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:ComposePress/core.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ComposePress\\Starter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ComposePress\\Starter\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint": "find src -name '*.php' -print0 | xargs -0 -n1 php -l",
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text",
+        "analyse": "phpstan analyse",
+        "style": "phpcs --standard=.phpcs.xml.dist src tests"
+    },
+    "config": {
+        "sort-packages": true
     }
-  ],
-  "require": {
-    "composepress/core": "^0.3.0",
-    "composepress/settings": "^0.1.0",
-    "level-2/dice": "dev-v2.0-PHP5.4-5.5"
-  },
-  "autoload": {
-    "psr-4": {
-      "": "lib/"
-    }
-  }
 }
